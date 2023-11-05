@@ -4,13 +4,44 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<style>
+    .img-edge-cover {
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.img-edge-cover:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow:0 0 25px 25px rgba(75, 61, 91,1) inset;
+}
+.img-edge-cover img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+    </style>
+
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Wei Yuan - Home</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> -->
+        <script src="https://kit.fontawesome.com/943882cf37.js" crossorigin="anonymous"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	</head>
 	<body class="is-preload">
 
@@ -19,21 +50,21 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
+						<!-- <div class="logo">
 							<span class="icon fa-gem"></span>
-						</div>
+						</div> -->
+						<div class="img-edge-cover"> <img src="images/profile.jpg" width="10%"/> </div>
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1>Wei Yuan / Arvin</h1>
+								<p>Graduate student at College of Biomedical Engineering, Sichuan University</i></p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#intro">About me</a></li>
+								<li><a href="#work">Research</a></li>
+								<li><a href="#about">CV</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -61,9 +92,9 @@
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
+								<h2 class="major">CV</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>To be updated</p>
 							</article>
 
 						<!-- Contact -->
@@ -343,7 +374,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; The stars look different tonight...</p>
+						<!--Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
 					</footer>
 
 			</div>
