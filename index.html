@@ -16,14 +16,23 @@
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
-    box-shadow:0 0 25px 25px rgba(99, 82, 114,1) inset;
+    left: 0; 
+    box-shadow: 0 0 25px 25px rgba(87, 67, 104,1) inset; 
 }
 .img-edge-cover img{
     width: 180px;
     height: 180px;
     display: block;
     margin-bottom: 20px;
+}
+
+.test{
+    width: 180px;
+    height: 180px;
+    background-image: url('images/profile.jpg');
+    background-size: cover;
+    -webkit-mask: radial-gradient(closest-side circle,#000 60%, transparent 100%);
+    mask: radial-gradient(closest-side circle,#000 60%, transparent 100%);
 }
 
     </style>
@@ -53,17 +62,18 @@
 						<!-- <div class="logo">
 							<span class="icon fa-gem"></span>
 						</div> -->
-						<div class="img-edge-cover"> <img src="images/profile.jpg" width="10%"/> </div>
+						<!-- <div class="img-edge-cover"> <img src="images/profile.jpg" width="10%"/> </div> -->
+						<div class="test"><img src="images/profile.jpg" width="10%"/></div>
 						<div class="content">
 							<div class="inner">
-								<h1>Wei Yuan / Arvin</h1>
-								<p>Graduate student at College of Biomedical Engineering, Sichuan University</i></p>
+								<h1>Wei Yuan <img src="images/signiture.png", style="vertical-align: middle; height: 1.8em;"> </h1>
+								<p><i style="font-size:1.5em; ">Graduate student at College of Biomedical Engineering, Sichuan University</i></p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">About me</a></li>
-								<li><a href="#work">Research</a></li>
+								<li><a href="#Research">Research</a></li>
 								<li><a href="#about">CV</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -83,8 +93,9 @@
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+							<article id="Research" style="background-image: none;">
+                                
+							<h2 class="major" style="white-space: pre-line;">Research</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
@@ -374,7 +385,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; The stars look different tonight...</p>
+						<p class="copyright"><i style="font-size:1.2em; ">&copy; The stars look different tonight...</i></p>
 						<!--Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
 					</footer>
 
