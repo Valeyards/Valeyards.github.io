@@ -1108,10 +1108,10 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-		-moz-transform: scale(1.005);
-		-webkit-transform: scale(1.005);
-		-ms-transform: scale(1.005);
-		transform: scale(1.005);
+		-moz-transform: scale(1.00);
+		-webkit-transform: scale(1.00);
+		-ms-transform: scale(1.00);
+		transform: scale(1.00);
 		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
@@ -1162,8 +1162,9 @@ input, select, textarea {
 			background-image: url("../../images/bg.jpg");
 			background-position: center;
 			background-size: 102% 102%; 
+			/* background-size: cover; */
 			background-repeat: no-repeat;
-			background-attachment: fixed;
+			background-attachment: scroll;
 
 			z-index: 1;
 		}
