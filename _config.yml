@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Title1"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
+title                    : "Wei Yuan"
+description              : ""
 repository               : "Valeyards/Valeyards.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Wei Yuan"
   avatar           : "images/profile.jpg"
-  bio              : "Lorem ipsum College"
-  location         : "Chengdu, China"
+  bio              : "Graduate student at College of Biomedical Engineering, Sichuan University, PRC"
+  location         : "Chengdu"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
