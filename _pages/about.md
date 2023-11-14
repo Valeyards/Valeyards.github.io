@@ -30,23 +30,11 @@ I am deeply indebted to everyone who has supported me in my academic career.
 
 # 📝 Publications 
 - To be updated...
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
-- *2023* DrivenData VisioMel Melanoma relapse prediction Challenge, &nbsp; <p style="text-align:right">**5/541**</p>
-- *2022* MICCAI PARSE segmentation Challenge, &nbsp; <p style="text-align:right">**23/474**</p>
+<ul>
+<li><i>2023</i> DrivenData VisioMel Melanoma relapse prediction Challenge <p style="text-align:right"><b>5/541</b></p></li>
+<li><i>2022</i> MICCAI PARSE segmentation Challenge <p style="text-align:right"><b>23/474</b></p></li>
 
 # 📖 Educations
 - <img src="images/scu.png" alt="" style="width:30px; display:inline-block; vertical-align:middle">&nbsp;*2024 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*, Ph.D student in Biomedical Engineering, Sichuan University
