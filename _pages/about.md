@@ -45,7 +45,7 @@ I am deeply indebted to everyone who has supported me in my academic career.
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2023* Datadriven VisioMel Melanoma relapse prediction Challenge, &nbsp; **5/541**
+- *2023* DrivenData VisioMel Melanoma relapse prediction Challenge, &nbsp; **5/541**
 - *2022* MICCAI PARSE segmentation Challenge, &nbsp; **23/474**
 
 # 📖 Educations
