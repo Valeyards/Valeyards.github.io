@@ -47,9 +47,9 @@ My research interest includes neural machine translation and computer vision. I 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- <p style="width:20px; display:inline-block; vertical-align:middle"><img src="images/scu.png" alt="">*2024 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Ph.D student in Biomedical Engineering, Sichuan University
-- <p style="width:20px; display:inline-block; vertical-align:middle"><img src="images/scu.png" alt="">*2021 - 2024 (now)*, M.Sc. in Biomedical Engineering, Sichuan University
-- <p style="width:20px; display:inline-block; vertical-align:middle"><img src="images/scu.png" alt="">*2017 - 2021*, B.Eng. in Medical Information Engineering, Sichuan University
+- <img src="images/scu.png" alt="" style="width:20px; display:inline-block; vertical-align:middle">*2024 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Ph.D student in Biomedical Engineering, Sichuan University
+- <img src="images/scu.png" alt="" style="width:20px; display:inline-block; vertical-align:middle">*2021 - 2024 (now)*, M.Sc. in Biomedical Engineering, Sichuan University
+- <p ><img src="images/scu.png" alt="" style="width:20px; display:inline-block; vertical-align:middle">*2017 - 2021*, B.Eng. in Medical Information Engineering, Sichuan University
 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
