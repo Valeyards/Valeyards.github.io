@@ -35,6 +35,7 @@ I am deeply indebted to everyone who has supported me in my academic career.
 <ul>
 <li><i>2023</i> DrivenData VisioMel Melanoma relapse prediction Challenge <p style="text-align:right"><b>5/541</b></p></li>
 <li><i>2022</i> MICCAI PARSE segmentation Challenge <p style="text-align:right"><b>23/474</b></p></li>
+</ul>
 
 # 📖 Educations
 - <img src="images/scu.png" alt="" style="width:30px; display:inline-block; vertical-align:middle">&nbsp;*2024 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*, Ph.D student in Biomedical Engineering, Sichuan University
