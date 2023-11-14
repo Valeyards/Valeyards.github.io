@@ -29,8 +29,8 @@ I am deeply indebted to everyone who has supported me in my academic career.
 - *2023.11.8*: &nbsp;🎉🎉 I passed my successive master-doctoral exam!
 
 # 📝 Publications 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+- To be updated...
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
@@ -42,11 +42,11 @@ I am deeply indebted to everyone who has supported me in my academic career.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
-- *2023* DrivenData VisioMel Melanoma relapse prediction Challenge, &nbsp; <p align='right'>**5/541**</p>
-- *2022* MICCAI PARSE segmentation Challenge, &nbsp; <p align='right'>**23/474**</p>
+- *2023* DrivenData VisioMel Melanoma relapse prediction Challenge, &nbsp; <p style="text-align:right">**5/541**</p>
+- *2022* MICCAI PARSE segmentation Challenge, &nbsp; <p style="text-align:right">**23/474**</p>
 
 # 📖 Educations
 - <img src="images/scu.png" alt="" style="width:30px; display:inline-block; vertical-align:middle">&nbsp;*2024 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*, Ph.D student in Biomedical Engineering, Sichuan University
