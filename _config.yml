@@ -9,7 +9,7 @@
 title                    : "Wei Yuan"
 description              : ""
 repository               : "Valeyards/Valeyards.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "Valeyards" # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
