@@ -37,6 +37,8 @@ I am deeply indebted to everyone who has supported me in my academic career.
 </div>
 
 # 📝 Publications 
+___
+---
 {% include_relative pubs.md %}
 ___
 ---
