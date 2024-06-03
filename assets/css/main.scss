@@ -56,21 +56,18 @@
         display: flex;
         width: 100%;
         order: 2;
-        img {
+    }
+        .paper-box-image img {
             max-width: 400px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
+            transition: opacity 0.5s ease, transform 0.5s ease; /* 添加过渡效果 */
         }
-    }
+        
         .paper-box-image:hover img {
             opacity: 0.7;
             transform: scale(1.1);
-          }
-
-          .paper-box-image:hover .img {
-            opacity: 0.7;
-            transform: scale(1.1);
-          }
+        }
     
     .paper-box-text{
         max-width: 100%;
