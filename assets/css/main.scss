@@ -40,9 +40,6 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-.image {
-    opacity: 1;
-  }
 
 .paper-box {
     display: flex;
@@ -65,7 +62,12 @@
             object-fit: cover;
         }
     }
-        .paper-box-image:hover .image {
+        .paper-box-image:hover img {
+            opacity: 0.7;
+            transform: scale(1.1);
+          }
+
+          .paper-box-image:hover .img {
             opacity: 0.7;
             transform: scale(1.1);
           }
