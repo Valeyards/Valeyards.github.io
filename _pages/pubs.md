@@ -3,7 +3,7 @@
 </head>
 
 <div class='paper-box'>
-<div class='paper-box-image'><div class="ImgFade"><div class="badge">Computers in Biology and Medicine (IF:7.7) </div>
+<div class='paper-box-image ImgFade'><div><div class="badge">Computers in Biology and Medicine (IF:7.7) </div>
 <img src='images/pub/macg_1.png' alt="sym" width="100%" title="">
 <img src='images/pub/macg_2.png' alt="sym" width="100%" title="">
 <div class="middle">
