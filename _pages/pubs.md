@@ -13,15 +13,3 @@
 
 </div>
 </div>
-
-<div class='paper-box'>
-<div class='paper-box-image'><div><div class="badge">Remote Sensing (IF:5.0) </div>
-<img src='images/pub/esatsr.png' alt="sym" width="100%" title="">
-</div>
-<div class='paper-box-text' markdown="1">
-[ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context](https://www.mdpi.com/2072-4292/16/11/1956)
-
-- In this work, we propose ESatSR, a novel SR method based on state space models. Tailored for remote sensing images, the interaction of multi-scale spatial context and image features is leveraged to enhance the network’s capability in capturing features of small targets. 
-
-</div>
-</div>

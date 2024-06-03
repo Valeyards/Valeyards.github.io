@@ -37,11 +37,9 @@ I am deeply indebted to everyone who has supported me in my academic career.
 </div>
 
 # 📝 Publications 
-___
----
 {% include_relative pubs.md %}
-___
----
+
+
 # 🎖 Honors and Awards
 <ul>
 <li><i>2023</i> DrivenData VisioMel Melanoma relapse prediction Challenge <p style="text-align:right"><b>5/541</b></p></li>
