@@ -4,10 +4,9 @@
 
 <div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">Computers in Biology and Medicine (IF:7.7) </div>
-<ul class="actions">
+<a href="https://www.sciencedirect.com/science/article/pii/S0010482524007583">
 <img src='images/pub/macg.png' alt="sym" width="100%" title="" href="https://www.sciencedirect.com/science/article/pii/S0010482524007583">
-</ul>  
-</div>
+</a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
 [MACG-Net: Multi-axis cross gating network for deformable medical image registration](https://www.sciencedirect.com/science/article/pii/S0010482524007583)
