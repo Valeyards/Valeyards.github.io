@@ -9,7 +9,7 @@
 </a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
-[MACG-Net: Multi-axis cross gating network for deformable medical image registration](https://www.sciencedirect.com/science/article/pii/S0010482524007583)
+MACG-Net: Multi-axis cross gating network for deformable medical image registration
 
 **W. Yuan**, J. Cheng, Y. H. Gong, L. He, J. Zhang#
 
@@ -21,10 +21,12 @@
 
 <div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">Remote Sensing (IF:5.0) </div>
+<a href="https://www.mdpi.com/2072-4292/16/11/1956">
 <img src='images/pub/esatsr.png' alt="sym" width="100%" title="">
+</a>
 </div></div>
 <div class='paper-box-text' markdown="1">
-[ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context](https://www.mdpi.com/2072-4292/16/11/1956)
+ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context
 
 Y. X. Wang†, **W. Yuan†**, X. Fang, B. J. Lin#
 
