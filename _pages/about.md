@@ -56,9 +56,9 @@ I am deeply indebted to everyone who has supported me in my academic career.
 Material Features", contributed talk at CCISP 2022. (Chengdu, China)
 <!-- - Nov., 2022, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Internships
+<!-- # 💻 Internships -->
 <!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
-Not applicable
+<!-- Not applicable -->
 
 <p>
 &nbsp;
