@@ -9,11 +9,11 @@
 </a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
-### MACG-Net: Multi-axis cross gating network for deformable medical image registration
+### **MACG-Net: Multi-axis cross gating network for deformable medical image registration**
 
 ---
 
-**W. Yuan**, J. Cheng, Y. H. Gong, L. He, J. Zhang#
+**W. Yuan**, J. Cheng, Y. H. Gong, L. He#, J. Zhang
 
 - In this work, we propose MACG-Net, for deformable image registration. 
 
@@ -28,7 +28,7 @@
 </a>
 </div></div>
 <div class='paper-box-text' markdown="1">
-### ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context
+### **ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context**
 
 ---
 
