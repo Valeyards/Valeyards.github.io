@@ -9,7 +9,7 @@
 </a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
-## **<font color=RoyalBlue >MACG-Net: Multi-axis Cross Gating Network for Deformable Medical Image Registration</font>**
+## **<font color=SteelBlue >MACG-Net: Multi-axis Cross Gating Network for Deformable Medical Image Registration</font>**
 
 ---
 
