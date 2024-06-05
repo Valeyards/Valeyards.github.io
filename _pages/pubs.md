@@ -9,7 +9,7 @@
 </a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
-### **MACG-Net: Multi-axis Cross Gating Network for Deformable Medical Image Registration**
+### **<font color=MidnightBlue >MACG-Net: Multi-axis Cross Gating Network for Deformable Medical Image Registration**
 
 ---
 
@@ -29,7 +29,7 @@
 </div></div>
 <div class='paper-box-text' markdown="1">
 
-### **<font color=SteelBlue >ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context</font>**
+## **<font color=SteelBlue >ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context</font>**
 
 ---
 
