@@ -9,7 +9,7 @@
 </a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
-### **MACG-Net: Multi-axis cross gating network for deformable medical image registration**
+### **MACG-Net: Multi-axis Cross Gating Network for Deformable Medical Image Registration**
 
 ---
 
