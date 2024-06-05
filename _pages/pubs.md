@@ -29,7 +29,7 @@
 </div></div>
 <div class='paper-box-text' markdown="1">
 
-<font color=#008000 >ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context</font>
+### **<font color=SteelBlue >ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context</font>**
 
 ---
 
