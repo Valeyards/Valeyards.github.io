@@ -29,9 +29,9 @@ I am deeply indebted to everyone who has supported me in my academic career.
 
 <div class="bottom_box" >
 	<ul class="events">
-		<li data-date="5/2024">: One paper accepted by Remote Sensing. </li>
-		<li data-date="5/2024">: One paper accepted by Computers in Biology and Medicine. </li>
-		<li data-date="11/2023">: One paper accepted by Biomedical Signal Processing and Control. </li>
+		<li data-date="5/2024">: One paper accepted by *Remote Sensing*. </li>
+		<li data-date="5/2024">: One paper accepted by *Computers in Biology and Medicine*. </li>
+		<li data-date="11/2023">: One paper accepted by *Biomedical Signal Processing and Control*. </li>
 		<li data-date="11/2023">: 🎉🎉 I passed my successive master-doctoral exam!</li>
 	</ul>
 </div>
