@@ -24,7 +24,7 @@ My research interest includes Computational Pathology and Medical Image Analysis
 I am deeply indebted to everyone who has supported me in my academic career. 
 
 ---
-**I am literally non-Newtonian fluid. **
+<b>I am literally non-Newtonian fluid. </b>
 
 # 🔥 News
 <!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
