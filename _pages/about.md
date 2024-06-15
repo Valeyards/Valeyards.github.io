@@ -23,6 +23,9 @@ My research interest includes Computational Pathology and Medical Image Analysis
 
 I am deeply indebted to everyone who has supported me in my academic career. 
 
+---
+**I am literally non-Newtonian fluid. **
+
 # 🔥 News
 <!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 <title>Events</title> <style> .bottom_box { background-color: #F8F8F8; box-shadow: inset 0px 0px 5px -0.5px #888; /*z-index: 0px;*/ }ul.events { list-style-type: none; width: auto; padding: 10px; height: 200px; overflow: auto; } ul.events li { font-weight: normal; align-items: initial; position: relative; padding-left: 56px; z-index: 0; } ul.events li:before { content: attr(data-date) ""; font-weight: normal; color: #809898; position: absolute; left: 0px; z-index: 0; } code { background-color: #626868 !important; color: white; padding: 1px 3px !important; margin: 0px !important; border-radius: 0px !important; font-family: "Arial" !important; font-size: 12px !important; z-index: 0; } </style>
