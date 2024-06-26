@@ -32,6 +32,7 @@ I am deeply indebted to everyone who has supported me in my academic career.
 
 <div class="bottom_box" >
 	<ul class="events">
+		<li data-date="6/2024">: One paper accepted by <i>IEEE Transactions on Medical Imaging</i>. </li>
 		<li data-date="5/2024">: One paper accepted by <i>Remote Sensing</i>. </li>
 		<li data-date="5/2024">: One paper accepted by <i>Computers in Biology and Medicine</i>. </li>
 		<li data-date="11/2023">: One paper accepted by <i>Biomedical Signal Processing and Control</i>. </li>
