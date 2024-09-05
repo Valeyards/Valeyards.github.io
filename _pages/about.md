@@ -24,7 +24,6 @@ My research interest includes Computational Pathology and Medical Image Analysis
 I am deeply indebted to everyone who has supported me in my academic career. 
 
 ---
-<b>I am literally non-Newtonian fluid. </b>
 
 # 🔥 News
 <!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
@@ -32,6 +31,7 @@ I am deeply indebted to everyone who has supported me in my academic career.
 
 <div class="bottom_box" >
 	<ul class="events">
+		<li data-date="9/2024">: Our work about pathology foundation model has been accepted by <i>Nature</i>! </li>
 		<li data-date="6/2024">: One paper accepted by <i>IEEE Transactions on Medical Imaging</i>. </li>
 		<li data-date="5/2024">: One paper accepted by <i>Remote Sensing</i>. </li>
 		<li data-date="5/2024">: One paper accepted by <i>Computers in Biology and Medicine</i>. </li>

@@ -3,6 +3,22 @@
 </head>
 
 <div class='paper-box'>
+<div class='paper-box-image'><div><div class="badge">Nature </div>
+<a href="https://www.nature.com/articles/s41586-024-07894-z">
+<img src='images/pub/chief.png' alt="sym" width="100%" title="" href="https://www.nature.com/articles/s41586-024-07894-z">
+</a>  
+</div></div>
+<div class='paper-box-text' markdown="1">
+## **<font color=SteelBlue >A Pathology Foundation Model for Cancer Diagnosis and Prognosis Prediction</font>**
+
+---
+
+X. Y. Wang†, J. H. Zhao†, E. Marostica, **Wei Yuan**, J. T. Jin, J. Y. Zhang, R. J. Li, H. P. Tang, K. R. Wang, Y. Li, F. Wang, Y. L. Peng, J. Y. Zhu, Jing Zhang, C. R. Jackson, Jun Zhang, D. Dillon, N. U. Lin, L. Sholl, T. Denize, D. Meredith, K. L. Ligon, S. Signoretti, S. Ogino, J. A. Golden, M. P. Nasrallah, X. Han, S. Yang#, K. H. Yu#
+
+</div>
+</div>
+
+<div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">IEEE Transactions on Medical Imaging </div>
 <a href="https://ieeexplore.ieee.org/abstract/document/10571965">
 <img src='images/pub/hicervix.png' alt="sym" width="100%" title="" href="https://ieeexplore.ieee.org/abstract/document/10571965">
