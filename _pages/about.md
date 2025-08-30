@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm currently a graduate student at College of Biomedical Engineering, Sichuan University, advised by Prof. Jing Zhang. Prior to that, I got my bachelor's degree in Medical Information Engineering in 2021. I'm now working with Dr. [Xiyue Wang](https://scholar.google.com/citations?&user=OxfZXwwAAAAJ) and [Sen Yang](https://scholar.google.com/citations?user=I9y7C2UAAAAJ) on histopathology image guided clinical tasks. Previously, I worked with Prof. [Jun Cheng](https://scholar.google.com/citations?&user=42Oy5CYAAAAJ) about unsupervised deformable medical image registration. I was born and grown up in ChongQing, a city in the southwest China, famous as the city of mountain and frog. 
+I'm currently a graduate student at College of Biomedical Engineering, Sichuan University, advised by Prof. Jing Zhang. Prior to that, I got my bachelor's degree in Medical Information Engineering in 2021. I'm now working on histopathology image guided clinical tasks. Previously, I worked with Prof. Jun Cheng about unsupervised deformable medical image registration. I was born and grown up in ChongQing, a city in the southwest China, famous as the city of mountain and frog. 
 
 My research interest includes Computational Pathology and Medical Image Analysis (Segmentation, Registration, Super Resolution)<a href='https://scholar.google.com/citations?user=iJTVJf8AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
