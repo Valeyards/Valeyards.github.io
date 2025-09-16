@@ -77,8 +77,8 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 
 <div class='paper-box'>
 <div class='paper-box-image'><div><div class="badge">Computers in Biology and Medicine </div>
-<a href="https://www.sciencedirect.com/science/article/pii/S0010482524007583">
-<img src='images/pub/macg.png' alt="sym" width="100%" title="" href="https://www.sciencedirect.com/science/article/pii/S0010482524007583">
+<a href="https://doi.org/10.1016/j.compbiomed.2024.108673">
+<img src='images/pub/macg.png' alt="sym" width="100%" title="" href="https://doi.org/10.1016/j.compbiomed.2024.108673">
 </a>  
 </div></div>
 <div class='paper-box-text' markdown="1">
@@ -117,7 +117,7 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
     </div>
     <div class="pub-right">
       <span class="pub-title">
-        <a href="https://www.sciencedirect.com/science/article/pii/S1746809423012545">
+        <a href="https://doi.org/10.1016/j.bspc.2023.105821">
           Automatic Tooth Segmentation for Patients with Alveolar Clefts Guided by Tooth Descriptors
         </a>
       </span>
