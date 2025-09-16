@@ -72,9 +72,7 @@
     transform-origin: center;
 }
 
-.paper-box-image:hover {
-    transform: scale(1.36);
-}
+.paper-box-image:hover { transform: none; }
 
 .paper-box-image:hover img {
     opacity: 0.8;
@@ -88,12 +86,9 @@
 }
 
 /* Limit hover-zoom to hover-capable devices, reduce scale on desktop, disable on touch */
-@media (hover: hover) and (pointer: fine) {
-  .paper-box-image:hover { transform: scale(1.36); }
-}
-@media (hover: none) {
-  .paper-box-image:hover { transform: none; }
-}
+/* Robust gating by body class to handle browsers that misreport hover capability */
+.can-hover .paper-box-image:hover { transform: scale(1.36); }
+.no-hover  .paper-box-image:hover { transform: none !important; }
 
 /* Allow overflow when scaling so不被裁剪 */
 .paper-box { overflow: visible; }

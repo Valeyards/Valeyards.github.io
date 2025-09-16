@@ -2,6 +2,11 @@
 
 <script>
 (function(){
+  // add hover capability classes on <body> for robust control
+  try{
+    var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    document.body.classList.add(canHover ? 'can-hover' : 'no-hover');
+  }catch(e){}
   function initLife(){
     var canvas = document.getElementById('life-canvas');
     if(!canvas) return;
