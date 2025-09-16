@@ -73,7 +73,7 @@
 }
 
 .paper-box-image:hover {
-    transform: scale(1.44);
+    transform: scale(1.36);
 }
 
 .paper-box-image:hover img {
@@ -86,6 +86,17 @@
     transform-origin: center;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+/* Limit hover-zoom to hover-capable devices, reduce scale on desktop, disable on touch */
+@media (hover: hover) and (pointer: fine) {
+  .paper-box-image:hover { transform: scale(1.36); }
+}
+@media (hover: none) {
+  .paper-box-image:hover { transform: none; }
+}
+
+/* Allow overflow when scaling so不被裁剪 */
+.paper-box { overflow: visible; }
 
 
 .container:hover .middle {
@@ -290,6 +301,27 @@ h1:before, .anchor:before {
 }
 .logo-chip img { height: 100%; }  
 
+@media (max-width: 768px) {
+  .honors-list.honors-has-logo li {
+    grid-template-columns: 56px 1fr;
+    grid-auto-rows: auto;
+  }
+  .honor-logos.logos-center {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .honor-logo {
+    height: 28px;
+    max-width: 100px;
+  }
+  .honor-rank {
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin-top: 4px;
+  }
+}
+
 .page__content .pub-list{display:block}
 .page__content .pub-item{
   display:grid;
@@ -411,13 +443,14 @@ background:#d3d9de;
 }
 .life-card canvas{
   width:100%;
-  height:280px;
-  border-radius:8px;
+  height:auto;
+  aspect-ratio: 1;
+  border-radius:2px;
   display:block;
   cursor: pointer;  
 }
-.life-card .life-legend{
-  margin-top:6px;
-  font-size:12px;
-  color:#6F7F8A;
+.life-card .life-legend{margin-top:6px;font-size:12px;color:#6F7F8A}
+
+@media (max-width: 768px){
+  .life-card canvas{aspect-ratio: 16 / 10}
 }
