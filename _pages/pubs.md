@@ -64,7 +64,7 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 </div></div>
 <div class='paper-box-text' markdown="1">
 ## **<font color=SteelBlue >HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification</font>**
-<a href="https://doi.org/10.1109/TMI.2024.3419697"><img src="https://img.shields.io/badge/DOI-10.1109%2FTMI.2024.3419697-red" alt="DOI"></a>
+<a href="https://doi.org/10.1109/TMI.2024.3419697"><img src="https://img.shields.io/badge/DOI-10.1109%2FTMI.2024.3419697-blue" alt="DOI"></a>
 <a href="https://github.com/Scu-sen/HiCervix"><img src="https://img.shields.io/github/stars/Scu-sen/HiCervix?style=social&label=Code+★" alt="code"></a>
 ---
 
