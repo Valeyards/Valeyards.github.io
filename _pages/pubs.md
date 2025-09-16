@@ -4,7 +4,7 @@
 
 
 <div class='paper-box'>
-<div class='paper-box-image'><div><div class="badge">Nature </div>
+<div class='paper-box-image'><div><div class="badge">Signal Transduction and Targeted Therapy </div>
 <a href="https://www.nature.com/articles/s41392-025-02374-w">
 <img src='images/pub/progpath.jpg' alt="sym" width="100%" title="" href="https://www.nature.com/articles/s41392-025-02374-w">
 </a>  
@@ -23,7 +23,7 @@
 
 
 <div class='paper-box'>
-<div class='paper-box-image'><div><div class="badge">Nature </div>
+<div class='paper-box-image'><div><div class="badge">Journal of Clinical Oncology </div>
 <a href="https://pubmed.ncbi.nlm.nih.gov/40168636/">
 <img src='images/pub/jco.PNG' alt="sym" width="100%" title="" href="https://pubmed.ncbi.nlm.nih.gov/40168636/">
 </a>  
