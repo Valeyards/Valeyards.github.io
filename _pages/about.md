@@ -33,7 +33,7 @@ I am deeply indebted to everyone who has supported me in my academic career.
 	<ul class="events">
 		<li data-date="8/2025">: One paper accepted to <i>Signal Transduction and Targeted Therapy</i>. </li>
 		<li data-date="4/2025">: One paper accepted to <i>Journal of Clinical Oncology</i>. </li>
-		<li data-date="9/2024">: Our work about pathology foundation model has been accepted by <i>Nature</i>! </li>
+		<li data-date="9/2024">: Our work about pathology foundation model has been accepted to <i>Nature</i>! </li>
 		<li data-date="6/2024">: One paper accepted to <i>IEEE Transactions on Medical Imaging</i>. </li>
 		<li data-date="5/2024">: One paper accepted to <i>Remote Sensing</i>. </li>
 		<li data-date="5/2024">: One paper accepted to <i>Computers in Biology and Medicine</i>. </li>
