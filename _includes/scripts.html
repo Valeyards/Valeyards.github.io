@@ -177,11 +177,30 @@
     ro.observe(canvas);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLife);
-  } else {
-    initLife();
+  // Defer Life init: wait for images to load (window 'load'),
+  // or fallback to a short timeout if load is slow
+  function scheduleInitLife(){
+    var started = false;
+    function start(){
+      if (started) return; started = true;
+      var run = function(){
+        if (window.requestIdleCallback) {
+          requestIdleCallback(initLife, { timeout: 1200 });
+        } else {
+          setTimeout(initLife, 0);
+        }
+      };
+      // small grace period to ensure above-the-fold images paint
+      setTimeout(run, 150);
+    }
+
+    // primary: after all assets (images/fonts) loaded
+    window.addEventListener('load', start);
+    // fallback: if 'load' takes too long, start anyway after 1.5s
+    setTimeout(start, 1500);
   }
+
+  scheduleInitLife();
 })();
 </script>
 
