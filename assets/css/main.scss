@@ -224,7 +224,7 @@ h1:before, .anchor:before {
 
 .honors-list.honors-has-logo li {
   display: grid;
-  grid-template-columns: 56px 300px 1fr 120px; 
+  grid-template-columns: 56px minmax(160px, 28vw) 1fr minmax(90px, 120px); 
   align-items: center;
   column-gap: 6px;
 }
@@ -233,8 +233,15 @@ h1:before, .anchor:before {
   display: flex;
   justify-content: center;   
   align-items: center;
-  gap: 6px;
+  gap: clamp(3px, 1.2vw, 6px);
   width: 100%;               
+}
+
+@media (min-width: 1024px){
+  .honors-list.honors-has-logo li{ grid-template-columns: 56px minmax(160px, 22vw) 1fr minmax(90px, 120px); }
+}
+@media (min-width: 1400px){
+  .honors-list.honors-has-logo li{ grid-template-columns: 56px minmax(160px, 18vw) 1fr minmax(90px, 120px); }
 }
 
 .honor-logo {
