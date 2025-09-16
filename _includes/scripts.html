@@ -3,10 +3,23 @@
 <script>
 (function(){
   // add hover capability classes on <body> for robust control
-  try{
-    var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    document.body.classList.add(canHover ? 'can-hover' : 'no-hover');
-  }catch(e){}
+  function updateHoverClass(){
+    try{
+      var mqHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      var touchCap = (navigator.maxTouchPoints||0) > 0 || 'ontouchstart' in window;
+      var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+      var wideEnough = (window.innerWidth||0) >= 768;
+      var canHover = mqHover && !touchCap && !coarse && wideEnough;
+      document.body.classList.remove('can-hover','no-hover');
+      document.body.classList.add(canHover ? 'can-hover' : 'no-hover');
+    }catch(e){}
+  }
+  updateHoverClass();
+  window.addEventListener('resize', function(){
+    // debounce
+    clearTimeout(window.__hoverResizeTimer);
+    window.__hoverResizeTimer = setTimeout(updateHoverClass, 150);
+  });
   function initLife(){
     var canvas = document.getElementById('life-canvas');
     if(!canvas) return;
