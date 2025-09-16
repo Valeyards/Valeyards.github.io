@@ -307,14 +307,28 @@ h1:before, .anchor:before {
     gap: 4px;
   }
   .honor-logo {
-    height: 28px;
-    max-width: 100px;
+    height: 26px;
+    max-width: 90px;
   }
   .honor-rank {
     grid-column: 2 / 3;
     justify-self: start;
     margin-top: 4px;
+    font-size: 0.85em;
+    padding: 2px 10px;
   }
+}
+
+@media (max-width: 640px) {
+  .honor-logos.logos-center { gap: 3px; }
+  .honor-logo { height: 22px; max-width: 80px; }
+  .honors-list li { column-gap: 4px; }
+  .honor-title { font-size: 0.98em; }
+}
+
+@media (max-width: 380px) {
+  .honor-logo { height: 18px; max-width: 70px; }
+  .honor-title { font-size: 0.95em; }
 }
 
 .page__content .pub-list{display:block}
