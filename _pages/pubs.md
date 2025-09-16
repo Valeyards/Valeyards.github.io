@@ -95,4 +95,4 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 
 - `Remote Sensing` [ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context](https://www.mdpi.com/2072-4292/16/11/1956), Y. X. Wang†, **W. Yuan†**, X. Fang, B. J. Lin#
 
-- `BSPC` [Automatic Tooth Segmentation for Patients with Alveolar Clefts Guided by Tooth Descriptors](https://www.sciencedirect.com/science/article/pii/S1746809423012545), Y. H. Gong, J. Zhang, J. Cheng, **W. Yuan†**, L. He#
+- `BSPC` [Automatic Tooth Segmentation for Patients with Alveolar Clefts Guided by Tooth Descriptors](https://www.sciencedirect.com/science/article/pii/S1746809423012545), Y. H. Gong, J. Zhang, J. Cheng, **W. Yuan**, L. He#
