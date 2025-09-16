@@ -48,21 +48,25 @@ I am deeply indebted to everyone who has supported me in my academic career.
 <ul class="honors-list honors-has-logo">
   <li>
     <span class="honor-year">2025</span>
-    <span class="honor-logos logos-center">
-      <span class="logo-chip">
-        <img class="honor-logo" src="images/logos/crunch.png" alt="Crunch">
+    <span class="honor-title">
+      Autoimmune Disease Machine Learning Challenge #1
+      <span class="honor-logos logos-inline">
+        <span class="logo-chip">
+          <img class="honor-logo" src="images/logos/crunch.png" alt="Crunch">
+        </span>
+        <img class="honor-logo" src="images/logos/broad.png" alt="Broad Institute">
       </span>
-      <img class="honor-logo" src="images/logos/broad.png" alt="Broad Institute">
     </span>
-    <span class="honor-title">Autoimmune Disease Machine Learning Challenge #1</span>
     <span class="honor-rank rank-top3">3rd place</span>
   </li>
   <li>
     <span class="honor-year">2023</span>
-    <span class="honor-logos logos-center">
-      <img class="honor-logo" src="images/logos/drivendata.svg" alt="DrivenData">
+    <span class="honor-title">
+      DrivenData VisioMel Melanoma relapse prediction Challenge
+      <span class="honor-logos logos-inline">
+        <img class="honor-logo" src="images/logos/drivendata.svg" alt="DrivenData">
+      </span>
     </span>
-    <span class="honor-title">DrivenData VisioMel Melanoma relapse prediction Challenge</span>
     <span class="honor-rank rank-top5">5th place</span>
   </li>
 </ul>
