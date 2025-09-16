@@ -343,6 +343,13 @@ h1:before, .anchor:before {
   .honor-title { font-size: 0.95em; }
 }
 
+/* Fallback: very small logos on small screens regardless of can-hover detection */
+@media (max-width: 640px) {
+  .honors-list .honor-logo { height: 16px !important; max-width: 90px; }
+  .honors-list .logo-chip { height: 16px !important; }
+  .honors-list .honor-logo-darkbg { height: 16px !important; }
+}
+
 .page__content .pub-list{display:block}
 .page__content .pub-item{
   display:grid;
