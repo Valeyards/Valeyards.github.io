@@ -9,7 +9,29 @@
       var touchCap = (navigator.maxTouchPoints||0) > 0 || 'ontouchstart' in window;
       var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
       var wideEnough = (window.innerWidth||0) >= 768;
-      var canHover = mqHover && !touchCap && !coarse && wideEnough;
+
+      // UA heuristics: deny-list common mobile browsers that sometimes misreport hover
+      var ua = (navigator.userAgent||'').toLowerCase();
+      var isIOS = /iphone|ipod|ipad/.test(ua) || (navigator.platform === 'MacIntel' && (navigator.maxTouchPoints||0) > 1);
+      var isAndroid = /android/.test(ua);
+      var isWeChat = /micromessenger/.test(ua);
+      var isQQ = /qqbrowser/.test(ua);
+      var isUC = /ucbrowser/.test(ua);
+      var isBaidu = /baidubrowser|baiduwap/.test(ua);
+      var isSogou = /sogoumobilebrowser/.test(ua);
+      var isMiui = /miuibrowser/.test(ua);
+      var isHuawei = /huaweibrowser/.test(ua);
+      var isVivo = /vivobrowser/.test(ua);
+      var isOppo = /oppobrowser/.test(ua);
+      var mobileDeny = isIOS || isAndroid && (isWeChat || isQQ || isUC || isBaidu || isSogou || isMiui || isHuawei || isVivo || isOppo);
+
+      // manual override via localStorage: set 'hoverMode' to 'force-on' or 'force-off'
+      var override = undefined;
+      try{ override = localStorage.getItem('hoverMode'); }catch(e){}
+
+      var canHover = mqHover && !touchCap && !coarse && wideEnough && !mobileDeny;
+      if (override === 'force-on') canHover = true;
+      if (override === 'force-off') canHover = false;
       document.body.classList.remove('can-hover','no-hover');
       document.body.classList.add(canHover ? 'can-hover' : 'no-hover');
     }catch(e){}
@@ -103,6 +125,7 @@
     startLoop();
 
     var drawing=false, eraseMode=false;
+    var mobileMode = document.body.classList.contains('no-hover');
 
     function canvasToCell(e){
       var rect = canvas.getBoundingClientRect();
@@ -119,25 +142,33 @@
       draw();
     }
 
-    canvas.addEventListener('mousemove', function(e){
-      hoverCell = canvasToCell(e);
-      if(drawing) plotAtCell(hoverCell);
-      else draw();
-    });
+    if (mobileMode) {
+      // On touch devices: tap triggers random reseed instead of draw/erase
+      function reseedAndDraw(){ randomSeed(0.12); draw(); }
+      canvas.addEventListener('click', function(e){ e.preventDefault(); reseedAndDraw(); });
+      canvas.addEventListener('touchstart', function(e){ e.preventDefault(); reseedAndDraw(); }, {passive:false});
+      canvas.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+    } else {
+      // Desktop: keep draw/erase interactions
+      canvas.addEventListener('mousemove', function(e){
+        hoverCell = canvasToCell(e);
+        if(drawing) plotAtCell(hoverCell);
+        else draw();
+      });
 
-    canvas.addEventListener('mousedown', function(e){
-      e.preventDefault();
-      drawing = true;
-      eraseMode = (e.button===2);
-      plotAtCell(canvasToCell(e));
-    });
+      canvas.addEventListener('mousedown', function(e){
+        e.preventDefault();
+        drawing = true;
+        eraseMode = (e.button===2);
+        plotAtCell(canvasToCell(e));
+      });
 
-    window.addEventListener('mouseup', function(){ drawing=false; eraseMode=false; });
+      window.addEventListener('mouseup', function(){ drawing=false; eraseMode=false; });
+      canvas.addEventListener('contextmenu', function(e){ e.preventDefault(); });
 
-    canvas.addEventListener('contextmenu', function(e){ e.preventDefault(); });
-
-    canvas.addEventListener('mouseenter', function(){ paused=true;  });
-    canvas.addEventListener('mouseleave', function(){ paused=false; hoverCell=null; draw(); });
+      canvas.addEventListener('mouseenter', function(){ paused=true;  });
+      canvas.addEventListener('mouseleave', function(){ paused=false; hoverCell=null; draw(); });
+    }
 
     var ro = new ResizeObserver(function(){ setupByContainer(); });
     ro.observe(canvas);
