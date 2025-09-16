@@ -56,6 +56,8 @@
     display: inline-block;
     transform-origin: center;
     transition: transform 0.5s ease;
+    order: 2; /* Mobile-first: put image after text to avoid cross-item visual confusion */
+    z-index: 0; /* base stacking */
 }
 
 .paper-box-image img {
@@ -87,7 +89,7 @@
 
 /* Limit hover-zoom to hover-capable devices, reduce scale on desktop, disable on touch */
 /* Robust gating by body class to handle browsers that misreport hover capability */
-.can-hover .paper-box-image:hover { transform: scale(1.36); }
+.can-hover .paper-box-image:hover { transform: scale(1.36); z-index: 20; }
 .no-hover  .paper-box-image:hover { transform: none !important; }
 
 /* Allow overflow when scaling so不被裁剪 */
@@ -244,26 +246,13 @@ h1:before, .anchor:before {
   .honors-list.honors-has-logo li{ grid-template-columns: 56px minmax(160px, 18vw) 1fr minmax(90px, 120px); }
 }
 
-.honor-logo {
-  height: 34px;
-  max-width: 140px;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
+.honor-logo { height: 34px; max-width: 140px; width: auto; object-fit: contain; display: block; }
 
 .honor-year { text-align: right; padding-right: 2px; }
 
 .honor-logos { display: flex; align-items: center; gap: 4px; }  
 
-.honor-logo {
-  height: 34px;       
-  max-width: 140px;
-  width: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0;           
-}
+/* honor-logo 基础尺寸定义：避免重复声明 */
 
 .honor-logo[src*="drivendata"] { max-width: 120px; }
 
@@ -289,7 +278,7 @@ h1:before, .anchor:before {
   box-sizing:border-box; 
   height:34px;           
 }
-.honor-logo { height: 34px; width: auto; object-fit: contain; display: block; }
+
 
 .logo-chip {
   display: inline-flex;
@@ -387,6 +376,30 @@ h1:before, .anchor:before {
   text-overflow:clip
 }
 .pub-title a{word-break:break-word;overflow-wrap:anywhere}
+
+/* Hover highlight for publications */
+.pub-title a{transition: color .18s ease, text-shadow .18s ease}
+.venue-tag{transition: background-color .18s ease, box-shadow .18s ease, transform .18s ease}
+.page__content .venue-tag:hover,
+.page__content .venue-tag:focus-visible{
+  background:#d2dbd5; /* lighter than base #B9C7BD */
+  box-shadow:0 4px 10px rgba(0,0,0,.06);
+  transform: translateY(-1px)
+}
+
+/* Only highlight when hovering title link */
+/* Do NOT change title link color on hover in title/right area */
+.page__content .pub-title a:hover,
+.page__content .pub-title a:focus-visible,
+.page__content .pub-right:hover .pub-title a{ color: inherit; text-shadow: none }
+
+/* Highlight venue-tag when hovering the title/right area using :has() */
+.page__content .pub-item:has(.pub-right:hover) .venue-tag,
+.page__content .pub-item:has(.pub-title:hover) .venue-tag{
+  background:#d2dbd5;
+  box-shadow:0 4px 10px rgba(0,0,0,.06);
+  transform: translateY(-1px)
+}
 
 @media (max-width:640px){
   .page__content .pub-item{grid-template-columns:1fr}
