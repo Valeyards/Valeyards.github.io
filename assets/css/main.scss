@@ -303,10 +303,10 @@ h1:before, .anchor:before {
 }
 .logo-chip img { height: 100%; }  
 
-/* On touch/mobile (no-hover), align honor logo height with education logo (~32px) */
-.no-hover .honor-logo { height: 32px !important; max-width: 110px; }
-.no-hover .logo-chip { height: 32px !important; }
-.no-hover .honor-logo-darkbg { height: 32px !important; }
+/* On touch/mobile (no-hover), make honor logos extra compact */
+.no-hover .honor-logo { height: 16px !important; max-width: 110px; }
+.no-hover .logo-chip { height: 16px !important; }
+.no-hover .honor-logo-darkbg { height: 16px !important; }
 
 @media (max-width: 768px) {
   .honors-list.honors-has-logo li {
