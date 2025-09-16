@@ -70,14 +70,17 @@
 }
 
 .paper-box-image:hover img {
-    opacity: 0.2;
+    opacity: 0.8;
     transform: scale(1.5);
 }
 
 .paper-box-image:hover .badge {
-    opacity: 0.2 !important;
-    transform: scale(1.5) translate(-50%, -50%) !important;
+    opacity: 0.8 !important;
+    transform: scale(1.5) !important;
+    transform-origin: top left !important; /* 从左上角开始缩放 */
 }
+
+
 .container:hover .middle {
     opacity: 1;
   }
