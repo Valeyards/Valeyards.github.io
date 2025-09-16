@@ -194,6 +194,9 @@ h1:before, .anchor:before {
 }
 .honor-year { font-variant-numeric: tabular-nums; color: mix(#000, $text-color, 25%); }
 .honor-title { line-height: 1.6; }
+
+/* Improve small-screen readability for honors title */
+.honor-title{ overflow-wrap:anywhere; word-break:break-word; }
 .honor-rank { justify-self: end; padding: 2px 12px; border-radius: 999px; font-weight: 700; font-size: 0.9em; color: #fff; }
 
 .honor-rank.rank-top3{
@@ -218,15 +221,13 @@ h1:before, .anchor:before {
 
 .honor-rank.rank-top10 { background: linear-gradient(90deg,#b45309,#d97706); }
 
-@media (max-width: 768px) {
-  .honors-list li { grid-template-columns: 70px 1fr; grid-auto-rows: auto; }
-  .honor-rank { grid-column: 2 / 3; justify-self: start; margin-top: 4px; }
-} 
+/* merged into 1024px rules */
 
 
 .honors-list.honors-has-logo li {
   display: grid;
-  grid-template-columns: 56px minmax(160px, 28vw) 1fr minmax(90px, 120px); 
+  /* year | logos | title | rank */
+  grid-template-columns: 70px minmax(220px, 28%) minmax(0,1fr) minmax(110px, 12%);
   align-items: center;
   column-gap: 6px;
 }
@@ -240,13 +241,15 @@ h1:before, .anchor:before {
 }
 
 @media (min-width: 1024px){
-  .honors-list.honors-has-logo li{ grid-template-columns: 56px minmax(160px, 22vw) 1fr minmax(90px, 120px); }
+  /* tighten logos to 24% on medium/large screens */
+  .honors-list.honors-has-logo li{ grid-template-columns: 70px minmax(220px, 24%) minmax(0,1fr) minmax(110px, 12%); }
 }
 @media (min-width: 1400px){
-  .honors-list.honors-has-logo li{ grid-template-columns: 56px minmax(160px, 18vw) 1fr minmax(90px, 120px); }
+  /* further tighten on wide screens */
+  .honors-list.honors-has-logo li{ grid-template-columns: 70px minmax(220px, 20%) minmax(0,1fr) minmax(110px, 12%); }
 }
 
-.honor-logo { height: 34px; max-width: 140px; width: auto; object-fit: contain; display: block; }
+.honor-logo { height: clamp(18px, 1.2vw, 28px); max-width: 100px; width: auto; object-fit: contain; display: block; }
 
 .honor-year { text-align: right; padding-right: 2px; }
 
@@ -276,7 +279,7 @@ h1:before, .anchor:before {
   padding:4px 6px;
   border-radius:6px;
   box-sizing:border-box; 
-  height:34px;           
+  height: clamp(18px, 1.2vw, 28px);           
 }
 
 
@@ -284,7 +287,7 @@ h1:before, .anchor:before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 34px;             
+  height: clamp(18px, 1.2vw, 28px);             
   padding: 4px 6px;
   background: #1f2937;
   border-radius: 6px;
@@ -297,34 +300,27 @@ h1:before, .anchor:before {
 .no-hover .logo-chip { height: 16px !important; }
 .no-hover .honor-logo-darkbg { height: 16px !important; }
 
-@media (max-width: 768px) {
-  .honors-list.honors-has-logo li {
-    grid-template-columns: 56px 1fr;
-    grid-auto-rows: auto;
-  }
-  .honor-logos.logos-center {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-  .honor-logo {
-    height: 26px;
-    max-width: 90px;
-  }
-  .honor-rank {
-    grid-column: 2 / 3;
-    justify-self: start;
-    margin-top: 4px;
-    font-size: 0.85em;
-    padding: 2px 10px;
-  }
-}
+/* merged into 1024px rules */
 
-@media (max-width: 640px) {
-  .honor-logos.logos-center { gap: 3px; }
-  .honor-logo { height: 22px; max-width: 80px; }
-  .honors-list li { column-gap: 4px; }
-  .honor-title { font-size: 0.98em; }
+@media (max-width: 1024px) {
+  /* Two-row mobile layout: row1 year+logos, row2 title+rank */
+  .honors-list.honors-has-logo li {
+    display: grid;
+    grid-template-columns: 70px 1fr auto;
+    grid-template-areas:
+      "year logos logos"
+      "title title rank";
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 6px;
+  }
+  .honor-year{ grid-area: year; text-align:left; padding-right:0; font-size:0.95em; }
+  .honor-logos{ grid-area: logos; }
+  .honor-logos.logos-center{ justify-content:flex-start; flex-wrap:wrap; gap:4px; }
+  .honor-title{ grid-area: title; font-size:1.02em; line-height:1.5; }
+  .honor-rank{ grid-area: rank; justify-self:end; font-size:0.88em; padding:2px 10px; }
+  .honor-logo{ height:22px; max-width:80px; }
+  .honors-list.honors-has-logo li + li { margin-top: 12px; }
 }
 
 @media (max-width: 380px) {
@@ -334,9 +330,9 @@ h1:before, .anchor:before {
 
 /* Fallback: very small logos on small screens regardless of can-hover detection */
 @media (max-width: 640px) {
-  .honors-list .honor-logo { height: 16px !important; max-width: 90px; }
-  .honors-list .logo-chip { height: 16px !important; }
-  .honors-list .honor-logo-darkbg { height: 16px !important; }
+  .honors-list .honor-logo { height: 24px !important; max-width: 90px; }
+  .honors-list .logo-chip { height: 24px !important; }
+  .honors-list .honor-logo-darkbg { height: 24px !important; }
 }
 
 .page__content .pub-list{display:block}
@@ -492,6 +488,6 @@ background:#d3d9de;
 }
 .life-card .life-legend{margin-top:6px;font-size:12px;color:#6F7F8A}
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
   .life-card canvas{aspect-ratio: 16 / 10}
 }

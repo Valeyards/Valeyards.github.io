@@ -29,14 +29,14 @@ I am deeply indebted to everyone who has supported me in my academic career.
 <title>Events</title>
 <div class="bottom_box">
   <ul class="events">
-    <li data-date="8/2025">: One paper accepted to <i>Signal Transduction and Targeted Therapy</i>. </li>
-    <li data-date="4/2025">: One paper accepted to <i>Journal of Clinical Oncology</i>. </li>
-    <li data-date="9/2024">: Our work about pathology foundation model has been accepted to <i>Nature</i>! </li>
-    <li data-date="6/2024">: One paper accepted to <i>IEEE Transactions on Medical Imaging</i>. </li>
-    <li data-date="5/2024">: One paper accepted to <i>Remote Sensing</i>. </li>
-    <li data-date="5/2024">: One paper accepted to <i>Computers in Biology and Medicine</i>. </li>
-    <li data-date="11/2023">: One paper accepted to <i>Biomedical Signal Processing and Control</i>. </li>
-    <li data-date="11/2023">: 🎉🎉 I passed the exam of my doctoral program. </li>
+    <li data-date="8/2025 "> One paper accepted to <i>Signal Transduction and Targeted Therapy</i>. </li>
+    <li data-date="4/2025 "> One paper accepted to <i>Journal of Clinical Oncology</i>. </li>
+    <li data-date="9/2024 "> Our work about pathology foundation model has been accepted to <i>Nature</i>! </li>
+    <li data-date="6/2024 "> One paper accepted to <i>IEEE Transactions on Medical Imaging</i>. </li>
+    <li data-date="5/2024 "> One paper accepted to <i>Remote Sensing</i>. </li>
+    <li data-date="5/2024 "> One paper accepted to <i>Computers in Biology and Medicine</i>. </li>
+    <li data-date="11/2023 "> One paper accepted to <i>Biomedical Signal Processing and Control</i>. </li>
+    <li data-date="11/2023 "> 🎉🎉 I passed the exam of my doctoral program. </li>
   </ul>
 </div>
 
