@@ -29,7 +29,10 @@
       var override = undefined;
       try{ override = localStorage.getItem('hoverMode'); }catch(e){}
 
-      var canHover = mqHover && !touchCap && !coarse && wideEnough && !mobileDeny;
+      // hard stop on smaller screens regardless of MQ quirks
+      var hardSizeStop = (window.innerWidth||0) < 1024;
+
+      var canHover = mqHover && !touchCap && !coarse && wideEnough && !mobileDeny && !hardSizeStop;
       if (override === 'force-on') canHover = true;
       if (override === 'force-off') canHover = false;
       document.body.classList.remove('can-hover','no-hover');
