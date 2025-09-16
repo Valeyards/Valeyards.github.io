@@ -52,32 +52,39 @@
 }
 
 .paper-box-image {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    order: 2;
+    position: relative;
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.5s ease;
 }
 
 .paper-box-image img {
-    max-width: 400px;
-    box-shadow: 3px 3px 6px #888;
-    object-fit: cover;
-    transition: opacity 0.5s ease, transform 0.5s ease; /* 添加过渡效果 */
+    display: block;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    z-index: 1;
 }
 
 .paper-box-image .badge {
-    transition: opacity 0.5s ease, transform 0.5s ease; /* 添加过渡效果 */
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.3s ease; 
+    transform-origin: center;
+}
+
+.paper-box-image:hover {
+    transform: scale(1.44);
 }
 
 .paper-box-image:hover img {
     opacity: 0.8;
-    transform: scale(1.5);
 }
 
 .paper-box-image:hover .badge {
-    opacity: 0.8 !important;
-    transform: scale(1.4) !important;
-    transform-origin: center !important; /* 从左上角开始缩放 */
+    opacity: 0;                 
+    pointer-events: none;         
+    transform-origin: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 
@@ -116,16 +123,6 @@ h1:before, .anchor:before {
     margin-top: -$scroll_offset;
 }
 
-.badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
-}
 
 .middle {
     transition: .5s ease;
@@ -137,3 +134,290 @@ h1:before, .anchor:before {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   } 
+
+.edu-list { list-style: none; margin: 0; padding: 0; }
+.edu-list li {
+  display: grid;
+  grid-template-columns: 32px 140px 1fr; 
+  align-items: center;
+  column-gap: 12px;
+  margin: 10px 0;
+}
+.edu-logo { width: 32px; height: 32px; object-fit: cover; }
+.edu-date { font-variant-numeric: tabular-nums; color: mix(#000, $text-color, 20%); }
+.edu-text { line-height: 1.6; } 
+
+.pub-list { display: table; width: 100%; }
+.pub-item { display: table-row; }
+.pub-venue, .pub-main { display: table-cell; vertical-align: top; }
+
+.pub-venue { width: 140px; padding-left: 0; padding-right: 12px; }
+.venue-tag {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85em;  
+  letter-spacing: 0.2px; 
+}
+
+@media (max-width: 768px) {
+  .pub-venue { width: auto; padding-right: 0; }
+  .venue-tag { display: inline-block; }
+} 
+
+.pub-list { list-style: none; margin: 0; padding: 0; }
+.pub-item { margin: 0; }
+.pub-venue { width: 130px; }
+
+.page__content .pub-list { margin-left: 0; padding-left: 0; } 
+
+.honors-list { list-style: none; margin: 0; padding: 0; }
+.honors-list li {
+  display: grid;
+  grid-template-columns: 70px 1fr 120px; 
+  align-items: center;
+  column-gap: 6px;
+  padding: 8px 0;
+}
+.honor-year { font-variant-numeric: tabular-nums; color: mix(#000, $text-color, 25%); }
+.honor-title { line-height: 1.6; }
+.honor-rank { justify-self: end; padding: 2px 12px; border-radius: 999px; font-weight: 700; font-size: 0.9em; color: #fff; }
+
+.honor-rank.rank-top3{
+    background: linear-gradient(
+      45deg,
+      #fff6cf 0%,   
+      #fbe9a8 40%,
+      #f2d17a 80%
+    );
+    color:#333;                      
+    border:1px solid #f4e4b3;      
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.85),
+      inset 0 -1px 0 rgba(0,0,0,.04);
+    text-shadow: 0 1px 0 rgba(255,255,255,.65);
+  }
+.honor-rank.rank-top5{
+    background: linear-gradient(135deg,#e5e7eb 0%, #f8fafc 40%, #cbd5e1 80%);
+    color:#111827;
+    border:1px solid #cfd8df;
+  }
+
+.honor-rank.rank-top10 { background: linear-gradient(90deg,#b45309,#d97706); }
+
+@media (max-width: 768px) {
+  .honors-list li { grid-template-columns: 70px 1fr; grid-auto-rows: auto; }
+  .honor-rank { grid-column: 2 / 3; justify-self: start; margin-top: 4px; }
+} 
+
+
+.honors-list.honors-has-logo li {
+  display: grid;
+  grid-template-columns: 56px 300px 1fr 120px; 
+  align-items: center;
+  column-gap: 6px;
+}
+
+.honor-logos.logos-center {
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  gap: 6px;
+  width: 100%;               
+}
+
+.honor-logo {
+  height: 34px;
+  max-width: 140px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.honor-year { text-align: right; padding-right: 2px; }
+
+.honor-logos { display: flex; align-items: center; gap: 4px; }  
+
+.honor-logo {
+  height: 34px;       
+  max-width: 140px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0;           
+}
+
+.honor-logo[src*="drivendata"] { max-width: 120px; }
+
+.honors-list.honors-logo-only li {
+  display: grid;
+  grid-template-columns: 28px 1fr 120px; 
+  align-items: center;
+  column-gap: 6px;
+} 
+
+.logo-dark-bg {
+  background: #1f2937;   
+  padding: 6px;         
+  border-radius: 6px;
+}
+
+.logo-invert { filter: invert(1) hue-rotate(180deg); } 
+
+.honor-logo-darkbg {
+  background:#1f2937;
+  padding:4px 6px;
+  border-radius:6px;
+  box-sizing:border-box; 
+  height:34px;           
+}
+.honor-logo { height: 34px; width: auto; object-fit: contain; display: block; }
+
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;             
+  padding: 4px 6px;
+  background: #1f2937;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.logo-chip img { height: 100%; }  
+
+.page__content .pub-list{display:block}
+.page__content .pub-item{
+  display:grid;
+  grid-template-columns:96px 1fr;
+  column-gap:20px;
+  align-items:stretch;
+  margin-bottom:14px
+}
+.page__content .pub-left{display:flex;align-items:center}
+.page__content .pub-right{min-width:0}
+
+.venue-tag{
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+  height:34px;
+  margin:auto 0;
+  padding:0 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:6px;
+  line-height:1.1;
+  text-align:center;
+  background:#B9C7BD;
+  color:#243028
+}
+
+.pub-title{display:block;line-height:1.28;margin-bottom:2px}
+.pub-authors{display:block;line-height:1.38}
+
+.pub-right,.pub-title,.pub-title a{
+  white-space:normal;
+  overflow:visible;
+  text-overflow:clip
+}
+.pub-title a{word-break:break-word;overflow-wrap:anywhere}
+
+@media (max-width:640px){
+  .page__content .pub-item{grid-template-columns:1fr}
+  .page__content .pub-left{margin-bottom:6px}
+  .venue-tag{width:auto;display:inline-flex}
+}
+
+.badge{
+  position:absolute;
+  margin-top:.5em;
+  margin-left:-.5em;
+  padding:0 .75rem;
+  border-radius:4px;
+  color:#1F3142;
+  background:#c0dbef
+}
+.badge:hover{background:#A9C4D7} 
+
+
+.bottom_box{
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(160,175,185,0.35);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.6),
+    0 8px 20px rgba(0,0,0,0.06);
+  padding: 10px 12px;
+}
+
+.bottom_box .events li:before{
+  color: rgba(36,48,40,0.55);
+}
+
+.bottom_box .events{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  height: 200px;
+  overflow: auto;
+  background: transparent;
+}
+
+.bottom_box .events li{ position: relative; padding-left: 56px; }
+.bottom_box .events li:before{
+  content: attr(data-date) " ";
+  position: absolute; left: 0; top: 0;
+  color: #738e8e; font-weight: 500;
+}
+
+.bottom_box .events::-webkit-scrollbar{width:8px;height:8px}
+.bottom_box .events::-webkit-scrollbar-track{background:#E9EFF3;border-radius:8px}
+.bottom_box .events::-webkit-scrollbar-thumb{background:#9CB9CF;border-radius:8px;border:2px solid #E9EFF3}
+.bottom_box .events::-webkit-scrollbar-thumb:hover{background:#A9C4D7}
+.bottom_box .events{scrollbar-width:thin;scrollbar-color:#9CB9CF #E9EFF3} 
+
+.bottom_box .events i{
+    background:#E9EFF7;
+    color:#2B435D;
+    padding:1px 6px;
+    border-radius:6px;
+    font-style:normal;
+  }
+
+.bottom_box .events li{
+transition: background-color .18s ease, transform .18s ease;
+border-radius:2px;
+}
+.bottom_box .events li:hover{
+background:#d3d9de;
+}
+
+.life-card{
+  margin-top:16px;
+  background:#fff;
+  border:1px solid #E8ECF1;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(18,38,63,.06);
+  padding:10px;
+  text-align:center;
+}
+.life-card canvas{
+  width:100%;
+  height:280px;
+  border-radius:8px;
+  display:block;
+  cursor: pointer;  
+}
+.life-card .life-legend{
+  margin-top:6px;
+  font-size:12px;
+  color:#6F7F8A;
+}

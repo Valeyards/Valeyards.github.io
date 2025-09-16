@@ -66,6 +66,7 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 ## **<font color=SteelBlue >HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification</font>**
 <a href="https://doi.org/10.1109/TMI.2024.3419697"><img src="https://img.shields.io/badge/DOI-10.1109%2FTMI.2024.3419697-blue" alt="DOI"></a>
 <a href="https://github.com/Scu-sen/HiCervix"><img src="https://img.shields.io/github/stars/Scu-sen/HiCervix?style=social&label=Code+★" alt="code"></a>
+
 ---
 
  D. Cai†, J. Chen†, J. H. Zhao†, Y. Xue, S. Yang, **W. Yuan**, M. Feng, H. Y. Weng, S. G. Liu,
@@ -84,6 +85,7 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 </div></div>
 <div class='paper-box-text' markdown="1">
 ## **<font color=SteelBlue >MACG-Net: Multi-axis Cross Gating Network for Deformable Medical Image Registration</font>**
+<a href="https://doi.org/10.1016/j.compbiomed.2024.108673">  <img src="https://img.shields.io/badge/DOI-10.1016%2Fj.compbiomed.2024.108673-blue" alt="DOI"></a>
 
 ---
 
@@ -93,6 +95,38 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 </div>
 
 
-- `Remote Sensing` [ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context](https://www.mdpi.com/2072-4292/16/11/1956), Y. X. Wang†, **W. Yuan†**, X. Fang, B. J. Lin#
+<ul class="pub-list">
 
-- `BSPC` [Automatic Tooth Segmentation for Patients with Alveolar Clefts Guided by Tooth Descriptors](https://www.sciencedirect.com/science/article/pii/S1746809423012545), Y. H. Gong, J. Zhang, J. Cheng, **W. Yuan**, L. He#
+  <li class="pub-item">
+    <div class="pub-left">
+      <span class="venue-tag">Remote Sensing</span>
+    </div>
+    <div class="pub-right">
+      <span class="pub-title">
+        <a href="https://www.mdpi.com/2072-4292/16/11/1956">
+          ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context
+        </a>
+      </span>
+      <span class="pub-authors">
+        Y. X. Wang†, <strong>W. Yuan†</strong>, X. Fang, B. J. Lin#
+      </span>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-left">
+      <span class="venue-tag">BSPC</span>
+    </div>
+    <div class="pub-right">
+      <span class="pub-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1746809423012545">
+          Automatic Tooth Segmentation for Patients with Alveolar Clefts Guided by Tooth Descriptors
+        </a>
+      </span>
+      <span class="pub-authors">
+        Y. H. Gong, J. Zhang, J. Cheng, <strong>W. Yuan</strong>, L. He#
+      </span>
+    </div>
+  </li>
+
+</ul>

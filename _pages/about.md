@@ -26,20 +26,18 @@ I am deeply indebted to everyone who has supported me in my academic career.
 ---
 
 # 🔥 News
-<!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
-<title>Events</title> <style> .bottom_box { background-color: #F8F8F8; box-shadow: inset 0px 0px 5px -0.5px #888; /*z-index: 0px;*/ }ul.events { list-style-type: none; width: auto; padding: 10px; height: 200px; overflow: auto; } ul.events li { font-weight: normal; align-items: initial; position: relative; padding-left: 56px; z-index: 0; } ul.events li:before { content: attr(data-date) ""; font-weight: normal; color: #809898; position: absolute; left: 0px; z-index: 0; } code { background-color: #626868 !important; color: white; padding: 1px 3px !important; margin: 0px !important; border-radius: 0px !important; font-family: "Arial" !important; font-size: 12px !important; z-index: 0; } </style>
-
-<div class="bottom_box" >
-	<ul class="events">
-		<li data-date="8/2025">: One paper accepted to <i>Signal Transduction and Targeted Therapy</i>. </li>
-		<li data-date="4/2025">: One paper accepted to <i>Journal of Clinical Oncology</i>. </li>
-		<li data-date="9/2024">: Our work about pathology foundation model has been accepted to <i>Nature</i>! </li>
-		<li data-date="6/2024">: One paper accepted to <i>IEEE Transactions on Medical Imaging</i>. </li>
-		<li data-date="5/2024">: One paper accepted to <i>Remote Sensing</i>. </li>
-		<li data-date="5/2024">: One paper accepted to <i>Computers in Biology and Medicine</i>. </li>
-		<li data-date="11/2023">: One paper accepted to <i>Biomedical Signal Processing and Control</i>. </li>
-		<li data-date="11/2023">: 🎉🎉 I passed the exam of my doctoral program. </li>
-	</ul>
+<title>Events</title>
+<div class="bottom_box">
+  <ul class="events">
+    <li data-date="8/2025">: One paper accepted to <i>Signal Transduction and Targeted Therapy</i>. </li>
+    <li data-date="4/2025">: One paper accepted to <i>Journal of Clinical Oncology</i>. </li>
+    <li data-date="9/2024">: Our work about pathology foundation model has been accepted to <i>Nature</i>! </li>
+    <li data-date="6/2024">: One paper accepted to <i>IEEE Transactions on Medical Imaging</i>. </li>
+    <li data-date="5/2024">: One paper accepted to <i>Remote Sensing</i>. </li>
+    <li data-date="5/2024">: One paper accepted to <i>Computers in Biology and Medicine</i>. </li>
+    <li data-date="11/2023">: One paper accepted to <i>Biomedical Signal Processing and Control</i>. </li>
+    <li data-date="11/2023">: 🎉🎉 I passed the exam of my doctoral program. </li>
+  </ul>
 </div>
 
 # 📝 Publications 
@@ -47,24 +45,50 @@ I am deeply indebted to everyone who has supported me in my academic career.
 
 
 # 🎖 Honors and Awards
-<ul>
-<li><i>2025</i> Autoimmune Disease Machine Learning Challenge #1 <p style="text-align:right"><b>3rd place</b></p></li>
-<li><i>2023</i> DrivenData VisioMel Melanoma relapse prediction Challenge <p style="text-align:right"><b>5th place</b></p></li>
+<ul class="honors-list honors-has-logo">
+  <li>
+    <span class="honor-year">2025</span>
+    <span class="honor-logos logos-center">
+      <span class="logo-chip">
+        <img class="honor-logo" src="images/logos/crunch.png" alt="Crunch">
+      </span>
+      <img class="honor-logo" src="images/logos/broad.png" alt="Broad Institute">
+    </span>
+    <span class="honor-title">Autoimmune Disease Machine Learning Challenge #1</span>
+    <span class="honor-rank rank-top3">3rd place</span>
+  </li>
+  <li>
+    <span class="honor-year">2023</span>
+    <span class="honor-logos logos-center">
+      <img class="honor-logo" src="images/logos/drivendata.svg" alt="DrivenData">
+    </span>
+    <span class="honor-title">DrivenData VisioMel Melanoma relapse prediction Challenge</span>
+    <span class="honor-rank rank-top5">5th place</span>
+  </li>
 </ul>
 
 # 📖 Educations
-- <img src="images/scu.png" alt="" style="width:30px; display:inline-block; vertical-align:middle">&nbsp;*2024 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*, Ph.D student in Biomedical Engineering, Sichuan University
-- <img src="images/scu.png" alt="" style="width:30px; display:inline-block; vertical-align:middle">&nbsp;*2021 - 2024*, M.Sc. in Biomedical Engineering, Sichuan University
-- <img src="images/scu.png" alt="" style="width:30px; display:inline-block; vertical-align:middle">&nbsp;*2017 - 2021*, B.Eng. in Medical Information Engineering, Sichuan University
+<ul class="edu-list">
+  <li>
+    <img src="images/scu.png" class="edu-logo" alt="">
+    <span class="edu-date">2024 -</span>
+    <span class="edu-text">Ph.D student in Biomedical Engineering, Sichuan University</span>
+  </li>
+  <li>
+    <img src="images/scu.png" class="edu-logo" alt="">
+    <span class="edu-date">2021 - 2024</span>
+    <span class="edu-text">M.Sc. in Biomedical Engineering, Sichuan University</span>
+  </li>
+  <li>
+    <img src="images/scu.png" class="edu-logo" alt="">
+    <span class="edu-date">2017 - 2021</span>
+    <span class="edu-text">B.Eng. in Medical Information Engineering, Sichuan University</span>
+  </li>
+</ul>
 
 # 💬 Talks
 - Nov., 2022, "Textile Solid Waste Recognition with Multiple
 Material Features", contributed talk at CCISP 2022. (Chengdu, China)
-<!-- - Nov., 2022, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
-
-<!-- # 💻 Internships -->
-<!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
-<!-- Not applicable -->
 
 <p>
 &nbsp;

@@ -1,4 +1,139 @@
 <script src="assets/js/main.min.js"></script>
 
+<script>
+(function(){
+  function initLife(){
+    var canvas = document.getElementById('life-canvas');
+    if(!canvas) return;
+
+    var ctx = canvas.getContext('2d');
+    var DPR = Math.min(window.devicePixelRatio || 1, 2);
+    var cell = 8, interval = 140;
+    var cols, rows, grid, next, timer=null, paused=false;
+
+    function setupByContainer(){
+      var viewW = Math.floor(canvas.clientWidth);
+      var viewH = Math.floor(canvas.clientHeight);
+      if (!viewH || viewH < 120) viewH = 160;
+
+      canvas.width  = viewW * DPR;
+      canvas.height = viewH * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+
+      cols = Math.max(5, Math.floor(viewW / cell));
+      rows = Math.max(5, Math.floor(viewH / cell));
+
+      grid = Array.from({length:rows},()=>Array(cols).fill(0));
+      next = Array.from({length:rows},()=>Array(cols).fill(0));
+      randomSeed(0.12); draw();
+    }
+
+    function randomSeed(p){
+      for(var r=0;r<rows;r++) for(var c=0;c<cols;c++)
+        grid[r][c] = Math.random() < p ? 1 : 0;
+    }
+
+    function neighbors(r,c){
+      var n=0;
+      for(var dr=-1;dr<=1;dr++){
+        for(var dc=-1;dc<=1;dc++){
+          if(dr===0 && dc===0) continue;
+          var rr=(r+dr+rows)%rows, cc=(c+dc+cols)%cols;
+          n+=grid[rr][cc];
+        }
+      }
+      return n;
+    }
+
+    function step(){
+      for(var r=0;r<rows;r++){
+        for(var c=0;c<cols;c++){
+          var n=neighbors(r,c), a=grid[r][c]===1;
+          next[r][c]=(a&&(n===2||n===3))||(!a&&n===3)?1:0;
+        }
+      }
+      var t=grid; grid=next; next=t;
+    }
+
+    var hoverCell = null;
+    function draw(){
+      var viewW = canvas.width / DPR, viewH = canvas.height / DPR;
+      ctx.clearRect(0,0,viewW,viewH);
+      ctx.fillStyle='#F7FAFD';
+      ctx.fillRect(0,0,viewW,viewH);
+
+      ctx.fillStyle='#4F7EA3';
+      for(var r=0;r<rows;r++){
+        for(var c=0;c<cols;c++){
+          if(grid[r][c]) ctx.fillRect(c*cell+1, r*cell+1, cell-2, cell-2);
+        }
+      }
+
+      if(hoverCell){
+        ctx.strokeStyle = 'rgba(79,126,163,.55)';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(hoverCell.cx*cell+0.5, hoverCell.cy*cell+0.5, cell-1, cell-1);
+      }
+    }
+
+    function startLoop(){
+      if(timer) clearInterval(timer);
+      timer=setInterval(function(){ if(!paused){ step(); draw(); } }, interval);
+    }
+
+    setupByContainer();
+    startLoop();
+
+    var drawing=false, eraseMode=false;
+
+    function canvasToCell(e){
+      var rect = canvas.getBoundingClientRect();
+      var x = (e.clientX - rect.left) / rect.width  * (canvas.width  / DPR);
+      var y = (e.clientY - rect.top ) / rect.height * (canvas.height / DPR);
+      var cx = Math.max(0, Math.min(cols-1, Math.floor(x / cell)));
+      var cy = Math.max(0, Math.min(rows-1, Math.floor(y / cell)));
+      return {cx, cy};
+    }
+
+    function plotAtCell(p){
+      if(eraseMode){ grid[p.cy][p.cx] = 0; }
+      else { grid[p.cy][p.cx] = 1; }
+      draw();
+    }
+
+    canvas.addEventListener('mousemove', function(e){
+      hoverCell = canvasToCell(e);
+      if(drawing) plotAtCell(hoverCell);
+      else draw();
+    });
+
+    canvas.addEventListener('mousedown', function(e){
+      e.preventDefault();
+      drawing = true;
+      eraseMode = (e.button===2);
+      plotAtCell(canvasToCell(e));
+    });
+
+    window.addEventListener('mouseup', function(){ drawing=false; eraseMode=false; });
+
+    canvas.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+
+    canvas.addEventListener('mouseenter', function(){ paused=true;  });
+    canvas.addEventListener('mouseleave', function(){ paused=false; hoverCell=null; draw(); });
+
+    var ro = new ResizeObserver(function(){ setupByContainer(); });
+    ro.observe(canvas);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLife);
+  } else {
+    initLife();
+  }
+})();
+</script>
+
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
+
+
