@@ -48,6 +48,7 @@ I am deeply indebted to everyone who has supported me in my academic career.
 <ul class="honors-list honors-has-logo">
   <li>
     <span class="honor-year">2025</span>
+    <span class="honor-logos logos-center"></span>
     <span class="honor-title">National Scholarship</span>
     <span class="honor-rank rank-top3">Top 1%</span>
   </li>
