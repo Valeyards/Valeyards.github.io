@@ -1,5 +1,137 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .spotlight-btn {
+      position: relative;
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      background-color: #1e3a5f;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none !important;
+      border-radius: 4px;
+      font-weight: 500;
+      overflow: hidden;
+      --mouse-x: 50%;
+      --mouse-y: 50%;
+    }
+    
+    .spotlight-btn:hover {
+      text-decoration: none !important;
+    }
+    
+    .spotlight-btn::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: var(--mouse-x);
+      top: var(--mouse-y);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 40%, transparent 70%);
+      transform: translate(-50%, -50%);
+      transition: width 0.4s ease, height 0.4s ease, opacity 0.3s ease;
+      pointer-events: none;
+      opacity: 0;
+    }
+    
+    .spotlight-btn:hover::before {
+      width: 150px;
+      height: 150px;
+      opacity: 1;
+    }
+    
+    .spotlight-btn i {
+      position: relative;
+      z-index: 1;
+      margin-right: 0.5em;
+      transition: color 0.2s ease;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .spotlight-btn i.highlight {
+      color: #66b3ff;
+    }
+    
+    .spotlight-btn span {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .spotlight-btn .word {
+      position: relative;
+      display: inline-block;
+      transition: color 0.2s ease;
+    }
+    
+    .spotlight-btn .word.highlight {
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.querySelector('.spotlight-btn');
+      if (!btn) return;
+      
+      btn.addEventListener('mousemove', function(e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        this.style.setProperty('--mouse-x', x + 'px');
+        this.style.setProperty('--mouse-y', y + 'px');
+      });
+      
+      function getRandomRainbowColor() {
+        const hue = Math.floor(Math.random() * 360);
+        return `hsl(${hue}, 100%, 70%)`;
+      }
+      
+      const icon = btn.querySelector('i');
+      const span = btn.querySelector('span');
+      
+      function clearHighlights() {
+        if (icon) {
+          icon.classList.remove('highlight');
+          icon.style.color = '';
+        }
+        if (span) {
+          span.querySelectorAll('.word').forEach(w => {
+            w.classList.remove('highlight');
+            w.style.color = '';
+          });
+        }
+      }
+      
+      if (icon) {
+        icon.addEventListener('mouseenter', function() {
+          clearHighlights();
+          this.classList.add('highlight');
+        });
+      }
+      
+      if (span) {
+        const text = span.textContent;
+        const words = text.split(/\s+/);
+        span.innerHTML = words.map(word => `<span class="word">${word}</span>`).join(' ');
+        
+        const wordElements = span.querySelectorAll('.word');
+        
+        wordElements.forEach(wordEl => {
+          wordEl.addEventListener('mouseenter', function() {
+            clearHighlights();
+            this.classList.add('highlight');
+            this.style.color = getRandomRainbowColor();
+          });
+        });
+        
+        span.addEventListener('mouseleave', function() {
+          clearHighlights();
+        });
+      }
+      
+      btn.addEventListener('mouseleave', function(e) {
+        clearHighlights();
+      });
+    });
+  </script>
 </head>
 
 
@@ -93,38 +225,8 @@ X. Y. Wang†, J. H. Zhao†, E. Marostica, **W. Yuan**, J. T. Jin, J. Y. Zhang,
 </div>
 
 
-<ul class="pub-list">
-
-  <li class="pub-item">
-    <div class="pub-left">
-      <span class="venue-tag">Remote Sensing</span>
-    </div>
-    <div class="pub-right">
-      <span class="pub-title">
-        <a href="https://www.mdpi.com/2072-4292/16/11/1956">
-          ESatSR: Enhancing Super-Resolution for Satellite Remote Sensing Images with State Space Model and Spatial Context
-        </a>
-      </span>
-      <span class="pub-authors">
-        Y. X. Wang†, <strong>W. Yuan†</strong>, X. Fang, B. J. Lin#
-      </span>
-    </div>
-  </li>
-
-  <li class="pub-item">
-    <div class="pub-left">
-      <span class="venue-tag">BSPC</span>
-    </div>
-    <div class="pub-right">
-      <span class="pub-title">
-        <a href="https://doi.org/10.1016/j.bspc.2023.105821">
-          Automatic Tooth Segmentation for Patients with Alveolar Clefts Guided by Tooth Descriptors
-        </a>
-      </span>
-      <span class="pub-authors">
-        Y. H. Gong, J. Zhang, J. Cheng, <strong>W. Yuan</strong>, L. He#
-      </span>
-    </div>
-  </li>
-
-</ul>
+<div style="text-align: center; margin: 2em 0;">
+  <a href="https://scholar.google.com/citations?user=iJTVJf8AAAAJ" class="spotlight-btn">
+    <i class="fas fa-graduation-cap"></i><span>View All Publications on Google Scholar</span>
+  </a>
+</div>
